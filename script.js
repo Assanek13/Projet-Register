@@ -2,7 +2,7 @@ document.getElementById('RegisterForm').addEventListener('submit', function(even
     event.preventDefault(); 
 
     let isValid = true;
-    clearErrors(); // Appelle la fonction pour nettoyer les erreurs
+    clearErrors(); 
 
     const fullName = document.querySelector('input[name="fullName"]').value.trim();
     const username = document.querySelector('input[name="username"]').value.trim();
