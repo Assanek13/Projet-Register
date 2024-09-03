@@ -135,6 +135,28 @@ form .button input:hover {
 	background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
 
+.error-message {
+    color: #e74c3c; /* Couleur rouge pour les erreurs */
+    font-size: 14px;
+    margin-top: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+input.error {
+    border-color: #e74c3c; /* Bordure rouge pour les champs en erreur */
+}
+
+input:focus.error {
+    border-color: #e74c3c; /* Garde la bordure rouge lorsqu'on focus un champ en erreur */
+}
+
+.error-message.show {
+    visibility: visible;
+    opacity: 1;
+}
+
 @media (max-width: 584px) {
 	.container {
 		max-width: 100%;
